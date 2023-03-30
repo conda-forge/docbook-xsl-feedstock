@@ -17,12 +17,7 @@ build:
 requirements:
   run:
     # xmlcatalog is required by post-link.{bat,sh} and
-    # pre-unlink.{bat,sh}.
-    - libxml2
-
-test:
-  requires:
-    # Really need 2.10.3 build 6 or later.
+    # pre-unlink.{bat,sh}.  Really need 2.10.3 build 6 or later.
     - libxml2
 
 about:
