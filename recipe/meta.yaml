@@ -11,7 +11,12 @@ source:
   sha256: 966188d7c05fc76eaca115a55893e643dd01a3486f6368733c9ad974fcee7a26
 
 build:
-  noarch: generic
+  # Should really have "noarch: generic" here, but it seems noarch
+  # packages are built on Unix and will not include
+  # %PREFIX%\bin\.{post-link,pre-unlink}.bat.  If that can be fixed
+  # and it can be verified that noarch packages are ALWAYS built on
+  # Unix, "noarch: generic" could be restored and {bld,run_test}.bat
+  # removed.
   number: 0
 
 requirements:
