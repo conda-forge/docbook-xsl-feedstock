@@ -33,4 +33,3 @@ robocopy "%SRC_DIR%" "%PREFIX%\share\%PKG_NAME%" ^
     "VERSION.xsl"                                ^
     "catalog.xml"
 if not errorlevel 1 exit /b 1
-
