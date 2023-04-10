@@ -17,7 +17,7 @@ build:
   # and it can be verified that noarch packages are ALWAYS built on
   # Unix, "noarch: generic" could be restored and {bld,run_test}.bat
   # removed.
-  number: 0
+  number: 1
 
 requirements:
   run:
